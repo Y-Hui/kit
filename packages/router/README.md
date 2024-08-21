@@ -78,6 +78,8 @@ createHashRouter({
 wappers 的设计灵感来自 [umi](https://umijs.org/docs/guides/routes#wrappers)，使用 wappers 可以帮助实现例如路由鉴权、title 设置等功能。
 
 ```tsx
+import { WrapperProps } from '@kit/router'
+
 // 使用 declare module 增强类型提示
 declare module '@kit/router' {
   export interface NormalRoute {
@@ -85,7 +87,7 @@ declare module '@kit/router' {
   }
 }
 
-const Auth = ({ children, route }) => {
+const Auth: FC<WrapperProps> = ({ children, route }) => {
   console.log(route.permissions) // 当前路由配置的权限信息
   
   // 没有权限时，重定向到 404 页面

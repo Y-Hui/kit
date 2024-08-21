@@ -1,12 +1,12 @@
-import { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import {
   createBrowserRouter as createBrowserRouterImpl,
   createHashRouter as createHashRouterImpl,
   type RouteObject,
 } from 'react-router-dom'
 
-import { renderElement } from './render'
-import { RouteConfig } from './type'
+import renderElement from './render'
+import type { RouteConfig } from './type'
 
 function genRoutes<const T extends readonly RouteConfig[]>(options: {
   fallback?: ReactNode

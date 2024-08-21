@@ -1,8 +1,9 @@
-import { createElement, Fragment, ReactNode, Suspense } from 'react'
+import type { ReactNode } from 'react'
+import { createElement, Fragment, Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 
 import Redirect from './components/Redirect'
-import { NormalRoute, RouteConfig } from './type'
+import type { NormalRoute, RouteConfig } from './type'
 
 function renderWithWrapper(route: RouteConfig, child: ReactNode) {
   if (route.index) {
@@ -46,7 +47,7 @@ function renderNestElement(route: NormalRoute, fallback?: ReactNode) {
   )
 }
 
-export function renderElement(route: RouteConfig, fallback?: ReactNode) {
+export default function renderElement(route: RouteConfig, fallback?: ReactNode) {
   const { component: Child, index } = route
   const RouteElement = renderWithWrapper(route, <Child />)
 

@@ -1,10 +1,10 @@
-import { NormalRoute } from '@kit/router/src/type'
-import type { FC, PropsWithChildren } from 'react'
-import { useEffect } from 'react'
+import { type WrapperProps } from '@kit/router'
+import { type FC, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 declare module '@kit/router' {
   export interface NormalRoute {
+    /** 网页标题 */
     title?: string
   }
 }
@@ -24,7 +24,7 @@ function useTitle(args: UseTitleArgs) {
   }, [location.pathname, path, title])
 }
 
-const Title: FC<PropsWithChildren<{ route: NormalRoute }>> = (props) => {
+const Title: FC<WrapperProps> = (props) => {
   const { children, route } = props
 
   useTitle({ title: route.title ?? '', path: route.path })

@@ -36,4 +36,9 @@ export interface NormalRoute {
   wrappers?: ComponentType<any>[]
 }
 
+export type WrapperProps<P = unknown> = P & {
+  route: NormalRoute
+  children?: ReactNode | undefined
+}
+
 export type RouteConfig = NormalRoute | IndexRoute
