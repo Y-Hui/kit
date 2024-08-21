@@ -7,6 +7,28 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@types/nprogress':
+        specifier: ^0.2.3
+        version: 0.2.3
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      nprogress:
+        specifier: ^0.2.0
+        version: 0.2.0
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: ^6.26.1
+        version: 6.26.1(react-dom@18.3.1)(react@18.3.1)
+      tailwindcss:
+        specifier: ^3.4.10
+        version: 3.4.10
     devDependencies:
       '@kit/eslint':
         specifier: workspace:^
@@ -14,15 +36,30 @@ importers:
       '@types/node':
         specifier: ^22.4.1
         version: 22.4.1
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.0
+      '@vitejs/plugin-react-swc':
+        specifier: ^3.5.0
+        version: 3.7.0(vite@5.4.1)
       eslint:
         specifier: ^9.9.0
         version: 9.9.0
+      postcss:
+        specifier: ^8.4.41
+        version: 8.4.41
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
+      vite:
+        specifier: ^5.4.1
+        version: 5.4.1(@types/node@22.4.1)
 
   packages/eslint:
     dependencies:
@@ -69,43 +106,10 @@ importers:
       '@kit/router':
         specifier: workspace:^
         version: link:../router
-      '@types/nprogress':
-        specifier: ^0.2.3
-        version: 0.2.3
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      nprogress:
-        specifier: ^0.2.0
-        version: 0.2.0
-      react:
-        specifier: ^18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.3.1
-        version: 18.3.1(react@18.3.1)
-      react-router-dom:
-        specifier: ^6.26.1
-        version: 6.26.1(react-dom@18.3.1)(react@18.3.1)
-      tailwindcss:
-        specifier: ^3.4.10
-        version: 3.4.10
     devDependencies:
-      '@types/react':
-        specifier: ^18.3.3
-        version: 18.3.3
-      '@types/react-dom':
-        specifier: ^18.3.0
-        version: 18.3.0
-      '@vitejs/plugin-react-swc':
-        specifier: ^3.5.0
-        version: 3.7.0(vite@5.4.1)
-      postcss:
-        specifier: ^8.4.41
-        version: 8.4.41
-      vite:
-        specifier: ^5.4.1
-        version: 5.4.1(@types/node@22.4.1)
+      '@kit/tailwindcss':
+        specifier: workspace:^
+        version: link:../tailwindcss
 
   packages/router:
     dependencies:
@@ -128,6 +132,8 @@ importers:
       react-router-dom:
         specifier: ^6.26.1
         version: 6.26.1(react-dom@18.3.1)(react@18.3.1)
+
+  packages/tailwindcss: {}
 
 packages:
 

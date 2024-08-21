@@ -14,15 +14,15 @@ const router = createHashRouter({
     },
     {
       path: '/home',
-      components: lazy(() => import('./home.tsx')),
+      components: lazy(() => import('./home')),
     },
     {
       path: '/nest',
-      components: lazy(() => import('./nest.tsx')),
+      components: lazy(() => import('./nest')),
       routes: [
         {
           path: '/nest/1',
-          components: lazy(() => import('./nest1.tsx')),
+          components: lazy(() => import('./nest1')),
         },
       ],
     },
@@ -107,7 +107,7 @@ createHashRouter({
       title: 'Home',
       wrappers: [Auth],
       permissions: [Permission1, Permissions2],
-      components: lazy(() => import('./home.tsx')),
+      components: lazy(() => import('./home')),
     },
   ],
 })

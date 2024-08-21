@@ -1,5 +1,7 @@
 import { type FC, forwardRef, type PropsWithChildren, useEffect, useState } from 'react'
 
+import data from './test.json'
+
 export const enum Status {
   Enabled = 1,
   Disabled = 0,
