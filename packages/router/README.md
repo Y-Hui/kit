@@ -29,7 +29,11 @@ const router = createHashRouter({
   ],
 })
 
-<RouterProvider router={router} />
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <RouterProvider router={router} />,
+  </StrictMode>,
+)
 ```
 
 ### 嵌套路由
