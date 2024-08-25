@@ -98,6 +98,7 @@ export default function eslintConfig(...overrides) {
         '@eslint-react/avoid-shorthand-fragment': 'off',
         '@eslint-react/avoid-shorthand-boolean': 'off',
         '@eslint-react/naming-convention-use-state': 'off',
+        'import/prefer-default-export': 'off',
       },
     },
     eslintPluginPrettierRecommended,
