@@ -13,6 +13,9 @@ export default {
       borderRadius: sizes,
       padding: sizes,
       margin: sizes,
+      width: sizes,
+      height: sizes,
+      gap: sizes,
       zIndex: Object.fromEntries(
         Array.from({ length: 20 }, (_, index) => [index, `${index}px`]),
       ),
