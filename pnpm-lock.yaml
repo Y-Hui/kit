@@ -86,11 +86,11 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1(eslint-config-prettier@9.1.0)(eslint@8.57.0)(prettier@3.3.3)
       eslint-plugin-react-compiler:
-        specifier: 0.0.0-experimental-eeb1b2a-20240818
-        version: 0.0.0-experimental-eeb1b2a-20240818(eslint@8.57.0)
+        specifier: 19.0.0-beta-8a03594-20241020
+        version: 19.0.0-beta-8a03594-20241020(eslint@8.57.0)
       eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
-        version: 5.1.0-rc-fb9a90fa48-20240614(eslint@8.57.0)
+        specifier: 5.1.0-rc-1631855f-20241023
+        version: 5.1.0-rc-1631855f-20241023(eslint@8.57.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.9
         version: 0.4.9(eslint@8.57.0)
@@ -1816,8 +1816,8 @@ packages:
       synckit: 0.9.1
     dev: true
 
-  /eslint-plugin-react-compiler@0.0.0-experimental-eeb1b2a-20240818(eslint@8.57.0):
-    resolution: {integrity: sha512-ZQDW0fM4HraxdKztUv8Q5i4WNZ4m6Cf0vTdfyYKpNFYHIsEW0XgcRFiFyYpmm8cdXJHCQOB7j/IJJ0mCrIJ+cA==}
+  /eslint-plugin-react-compiler@19.0.0-beta-8a03594-20241020(eslint@8.57.0):
+    resolution: {integrity: sha512-bYg1COih1s3r14IV/AKdQs/SN7CQmNI0ZaMtPdgZ6gp1S1Q/KGP9P43w7R6dHJ4wYpuMBvekNJHQdVu+x6UM+A==}
     engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
     peerDependencies:
       eslint: '>=7'
@@ -1917,8 +1917,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-react-hooks@5.1.0-rc-fb9a90fa48-20240614(eslint@8.57.0):
-    resolution: {integrity: sha512-xsiRwaDNF5wWNC4ZHLut+x/YcAxksUd9Rizt7LaEn3bV8VyYRpXnRJQlLOfYaVy9esk4DFP4zPPnoNVjq5Gc0w==}
+  /eslint-plugin-react-hooks@5.1.0-rc-1631855f-20241023(eslint@8.57.0):
+    resolution: {integrity: sha512-ohDko9xwausG054sm2kvM0ZssnaZ0jRBL3tduCR9Bo3rott+zD8O9p6PC5B+LN/6f2RwKRNCdN2WcrkNul/ljg==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -2055,6 +2055,7 @@ packages:
   /eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)

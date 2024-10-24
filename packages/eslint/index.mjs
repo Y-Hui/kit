@@ -43,7 +43,15 @@ export default function eslintConfig(...overrides) {
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
           1,
-          { vars: 'all', args: 'none', ignoreRestSiblings: true },
+          {
+            args: 'all',
+            argsIgnorePattern: '^_',
+            caughtErrors: 'all',
+            caughtErrorsIgnorePattern: '^_',
+            destructuredArrayIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
+            ignoreRestSiblings: true,
+          },
         ],
         '@typescript-eslint/consistent-type-imports': [
           'error',
