@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "play": "pnpm -C packages/playground dev"
+    "play": "pnpm -C packages/playground dev",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@types/nprogress": "^0.2.3",

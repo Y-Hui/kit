@@ -37,9 +37,11 @@ function renderNestElement(route: NormalRoute, fallback?: ReactNode) {
         route,
         createElement(Child, null, [
           // 处理 undefined 和 null
-          route.redirectTo != null ? (
-            <Redirect key="redirect" path={route.path} to={route.redirectTo} />
-          ) : null,
+          route.redirectTo != null
+            ? (
+                <Redirect key="redirect" path={route.path} to={route.redirectTo} />
+              )
+            : null,
           <Outlet key="outlet" />,
         ]),
       )}

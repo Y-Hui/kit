@@ -46,7 +46,7 @@ export default {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(({ addUtilities }) => {
       addUtilities({
         '.svgr': {
           width: '1em',
